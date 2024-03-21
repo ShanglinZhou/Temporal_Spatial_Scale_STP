@@ -423,7 +423,7 @@ for paraInd in range(numPara):
                                 if label[-1] == hp['context'][0]:
                                     for iii in range(hp['batch_size']):
                                         delay = np.int32(label[iii])
-                                        thr =  np.int32(hp['thr_alpha']*delay + hp['thr_beta']/hp['dt'])
+                                        thr =  np.int32(hp['thr_alpha']*delay + hp['thr_beta'])
                                         resp = np.squeeze(np.where(temp[0,iii,stim_on:]> hp['eval_amp_threh']))
                                         if resp.size > 1:
                                             if resp[0]>(stim_dur*2 + delay*2) - thr and resp[0]< (stim_dur*2 + delay*2) + thr:
@@ -432,7 +432,7 @@ for paraInd in range(numPara):
                                     for iii in range(hp['batch_size']):
                                         delay = np.int32(label[iii])
                                         delay2 = np.int32(delay*hp['g'])
-                                        thr =  np.int32(hp['thr_alpha']*delay2 + hp['thr_beta']/hp['dt'])
+                                        thr =  np.int32(hp['thr_alpha']*delay2 + hp['thr_beta'])
                                         resp = np.squeeze(np.where(temp[0,iii,stim_on:]> hp['eval_amp_threh']))
                                         if resp.size > 1:
                                             if resp[0]>(stim_dur*2 + delay + delay2) - thr and resp[0]< (stim_dur*2 + delay + delay2) + thr:
