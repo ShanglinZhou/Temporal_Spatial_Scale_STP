@@ -1,7 +1,7 @@
 # codes to train RNNs to do temporal and spatial scaling task as in the paper 
 #'Unified control of temporal and spatial scales of sensorimotor behavior through neuromodulation of short-term synaptic plasticity'
 # By Shanglin Zhou and Dean Buonomano
-# this code is meant to incorprate the hyperparameter search. For a specific set of hyperparameters, just run the code after the second 'for' loop with hyperparameter specified in the 'hp' variable
+# This code is meant to incorprate the hyperparameter search. For a specific set of hyperparameters, just run the code after the second 'for' loop with hyperparameter specified in the 'hp' variable
 
 
 
