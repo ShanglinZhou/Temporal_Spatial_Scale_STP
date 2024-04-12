@@ -4,7 +4,7 @@ Optimization is implemented in TensorFlow 2.3.
 For details please see 'Unified control of temporal and spatial scales of sensorimotor behavior through neuromodulation of short-term synaptic plasticity' By Shanglin Zhou and Dean Buonomano
 
 Start with the main file PARAM.py which will call functions of the RNN model and task-related functions in model.py.
-Codes in PARAM.py are meant to incorporate the hyperparameter search. For a specific set of hyperparameters, just run the code after the second 'for' loop with the hyperparameter specified in the 'hp' variable'.
+Codes in PARAM.py are meant to incorporate the hyperparameter search. For a specific set of hyperparameters, just run the code after the second 'for' loop with the hyperparameters specified in the 'hp' variable'.
 
 As described in the paper, series tasks were implemented:
 
